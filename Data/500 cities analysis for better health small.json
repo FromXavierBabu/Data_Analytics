@@ -1,0 +1,1661 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "6vp6-wxuq",
+      "name" : "500 Cities: Local Data for Better Health, 2017 release",
+      "attribution" : "Centers for Disease Control and Prevention, National Center for Chronic Disease Prevention and Health Promotion, Division of Population Health",
+      "attributionLink" : "http://www.cdc.gov/nccdphp/dph/",
+      "averageRating" : 0,
+      "category" : "500 Cities",
+      "createdAt" : 1477670246,
+      "description" : "This is the complete dataset for the 500 Cities project 2017 release. This dataset includes 2015, 2014 model-based small area estimates for 27 measures of chronic disease related to unhealthy behaviors (5), health outcomes (13), and use of preventive services (9). Data were provided by the Centers for Disease Control and Prevention (CDC), Division of Population Health, Epidemiology and Surveillance Branch. The project was funded by the Robert Wood Johnson Foundation (RWJF) in conjunction with the CDC Foundation. It represents a first-of-its kind effort to release information on a large scale for cities and for small areas within those cities. It includes estimates for the 500 largest US cities and approximately 28,000 census tracts within these cities. These estimates can be used to identify emerging health problems and to inform development and implementation of effective, targeted public health prevention activities. Because the small area model cannot detect effects due to local interventions, users are cautioned against using these estimates for program or policy evaluations. Data sources used to generate these measures include Behavioral Risk Factor Surveillance System (BRFSS) data (2015, 2014), Census Bureau 2010 census population data, and American Community Survey (ACS) 2011-2015, 2010-2014 estimates. Because some questions are only asked every other year in the BRFSS, there are 7 measures from the 2014 BRFSS that are the same in the 2017 release as the previous 2016 release. More information about the methodology can be found at www.cdc.gov/500cities.",
+      "displayType" : "table",
+      "downloadCount" : 12521,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1516371892,
+      "licenseId" : "PUBLIC_DOMAIN",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 27387257,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1512392896,
+      "publicationGroup" : 13876602,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1512392408,
+      "rowsUpdatedBy" : "fwb6-kmt3",
+      "tableId" : 14667148,
+      "totalTimesRated" : 0,
+      "viewCount" : 16157,
+      "viewLastModified" : 1516371157,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 333188971,
+        "name" : "Year",
+        "dataTypeName" : "number",
+        "description" : "Year",
+        "fieldName" : "year",
+        "position" : 1,
+        "renderTypeName" : "number",
+        "tableColumnId" : 39752721,
+        "width" : 50,
+        "cachedContents" : {
+          "largest" : "2015",
+          "non_null" : 810103,
+          "average" : "2014.716065734851",
+          "null" : 0,
+          "top" : [ {
+            "item" : "2015",
+            "count" : 20
+          }, {
+            "item" : "2014",
+            "count" : 19
+          } ],
+          "smallest" : "2014",
+          "sum" : "1632127529"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "true",
+          "align" : "right"
+        }
+      }, {
+        "id" : 333188972,
+        "name" : "StateAbbr",
+        "dataTypeName" : "text",
+        "description" : "State abbreviation",
+        "fieldName" : "stateabbr",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752743,
+        "width" : 57,
+        "cachedContents" : {
+          "largest" : "WY",
+          "non_null" : 810103,
+          "null" : 0,
+          "top" : [ {
+            "item" : "AL",
+            "count" : 20
+          }, {
+            "item" : "AZ",
+            "count" : 19
+          }, {
+            "item" : "AR",
+            "count" : 18
+          }, {
+            "item" : "CA",
+            "count" : 17
+          }, {
+            "item" : "CO",
+            "count" : 16
+          }, {
+            "item" : "CT",
+            "count" : 15
+          }, {
+            "item" : "DC",
+            "count" : 14
+          }, {
+            "item" : "FL",
+            "count" : 13
+          }, {
+            "item" : "GA",
+            "count" : 12
+          }, {
+            "item" : "HI",
+            "count" : 11
+          }, {
+            "item" : "IL",
+            "count" : 10
+          }, {
+            "item" : "IN",
+            "count" : 9
+          }, {
+            "item" : "IA",
+            "count" : 8
+          }, {
+            "item" : "KS",
+            "count" : 7
+          }, {
+            "item" : "KY",
+            "count" : 6
+          }, {
+            "item" : "LA",
+            "count" : 5
+          }, {
+            "item" : "MD",
+            "count" : 4
+          }, {
+            "item" : "MA",
+            "count" : 3
+          }, {
+            "item" : "MI",
+            "count" : 2
+          }, {
+            "item" : "MN",
+            "count" : 1
+          } ],
+          "smallest" : "AK"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188973,
+        "name" : "StateDesc",
+        "dataTypeName" : "text",
+        "description" : "State name",
+        "fieldName" : "statedesc",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752744,
+        "width" : 63,
+        "cachedContents" : {
+          "largest" : "Wyoming",
+          "non_null" : 810103,
+          "null" : 0,
+          "top" : [ {
+            "item" : "Alabama",
+            "count" : 20
+          }, {
+            "item" : "Arizona",
+            "count" : 19
+          }, {
+            "item" : "Arkansas",
+            "count" : 18
+          }, {
+            "item" : "California",
+            "count" : 17
+          }, {
+            "item" : "Colorado",
+            "count" : 16
+          }, {
+            "item" : "Connecticut",
+            "count" : 15
+          }, {
+            "item" : "District of Columbia",
+            "count" : 14
+          }, {
+            "item" : "Florida",
+            "count" : 13
+          }, {
+            "item" : "Georgia",
+            "count" : 12
+          }, {
+            "item" : "Hawaii",
+            "count" : 11
+          }, {
+            "item" : "Illinois",
+            "count" : 10
+          }, {
+            "item" : "Indiana",
+            "count" : 9
+          }, {
+            "item" : "Iowa",
+            "count" : 8
+          }, {
+            "item" : "Kansas",
+            "count" : 7
+          }, {
+            "item" : "Kentucky",
+            "count" : 6
+          }, {
+            "item" : "Louisiana",
+            "count" : 5
+          }, {
+            "item" : "Maryland",
+            "count" : 4
+          }, {
+            "item" : "Massachusetts",
+            "count" : 3
+          }, {
+            "item" : "Michigan",
+            "count" : 2
+          }, {
+            "item" : "Minnesota",
+            "count" : 1
+          } ],
+          "smallest" : "Alabama"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188974,
+        "name" : "CityName",
+        "dataTypeName" : "text",
+        "description" : "City name",
+        "fieldName" : "cityname",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752722,
+        "width" : 63,
+        "cachedContents" : {
+          "largest" : "Yuma",
+          "non_null" : 810047,
+          "null" : 56,
+          "top" : [ {
+            "item" : "Los Angeles",
+            "count" : 20
+          }, {
+            "item" : "Chicago",
+            "count" : 19
+          }, {
+            "item" : "New York",
+            "count" : 18
+          }, {
+            "item" : "Columbus",
+            "count" : 17
+          }, {
+            "item" : "Oklahoma City",
+            "count" : 16
+          }, {
+            "item" : "Philadelphia",
+            "count" : 15
+          }, {
+            "item" : "Memphis",
+            "count" : 14
+          }, {
+            "item" : "Nashville",
+            "count" : 13
+          }, {
+            "item" : "Austin",
+            "count" : 12
+          }, {
+            "item" : "Dallas",
+            "count" : 11
+          }, {
+            "item" : "El Paso",
+            "count" : 10
+          }, {
+            "item" : "Fort Worth",
+            "count" : 9
+          }, {
+            "item" : "Houston",
+            "count" : 8
+          }, {
+            "item" : "San Antonio",
+            "count" : 7
+          }, {
+            "item" : "Salt Lake City",
+            "count" : 6
+          }, {
+            "item" : "Alexandria",
+            "count" : 5
+          }, {
+            "item" : "Chesapeake",
+            "count" : 4
+          }, {
+            "item" : "Newport News",
+            "count" : 3
+          }, {
+            "item" : "Norfolk",
+            "count" : 2
+          }, {
+            "item" : "Richmond",
+            "count" : 1
+          } ],
+          "smallest" : "Abilene"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188975,
+        "name" : "GeographicLevel",
+        "dataTypeName" : "text",
+        "description" : "Identifies either US, City or Census Tract\n",
+        "fieldName" : "geographiclevel",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752723,
+        "width" : 102,
+        "cachedContents" : {
+          "largest" : "US",
+          "non_null" : 810103,
+          "null" : 0,
+          "top" : [ {
+            "item" : "US",
+            "count" : 20
+          }, {
+            "item" : "City",
+            "count" : 19
+          }, {
+            "item" : "Census Tract",
+            "count" : 18
+          } ],
+          "smallest" : "Census Tract"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188976,
+        "name" : "DataSource",
+        "dataTypeName" : "text",
+        "description" : "Data source",
+        "fieldName" : "datasource",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752724,
+        "width" : 64,
+        "cachedContents" : {
+          "largest" : "BRFSS",
+          "non_null" : 810103,
+          "null" : 0,
+          "top" : [ {
+            "item" : "BRFSS",
+            "count" : 20
+          } ],
+          "smallest" : "BRFSS"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188977,
+        "name" : "Category",
+        "dataTypeName" : "text",
+        "description" : "Topic",
+        "fieldName" : "category",
+        "position" : 7,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752725,
+        "width" : 62,
+        "cachedContents" : {
+          "largest" : "Unhealthy Behaviors",
+          "non_null" : 810103,
+          "null" : 0,
+          "top" : [ {
+            "item" : "Prevention",
+            "count" : 20
+          }, {
+            "item" : "Health Outcomes",
+            "count" : 19
+          }, {
+            "item" : "Unhealthy Behaviors",
+            "count" : 18
+          } ],
+          "smallest" : "Health Outcomes"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188978,
+        "name" : "UniqueID",
+        "dataTypeName" : "text",
+        "description" : "At city-level, it is the FIPS code of CityFIPS. For tract-level data, it is a combined ID of CityFIPS and TractFIPS for tracts within the respective city with the exception of Honolulu, which only uses TractFIPS\n",
+        "fieldName" : "uniqueid",
+        "position" : 8,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752726,
+        "width" : 81,
+        "cachedContents" : {
+          "largest" : "59",
+          "non_null" : 810103,
+          "null" : 0,
+          "top" : [ {
+            "item" : "5566000",
+            "count" : 20
+          }, {
+            "item" : "5584250",
+            "count" : 19
+          }, {
+            "item" : "5584250-55133202201",
+            "count" : 18
+          }, {
+            "item" : "5584250-55133202202",
+            "count" : 17
+          }, {
+            "item" : "5584250-55133202301",
+            "count" : 16
+          }, {
+            "item" : "5584250-55133202302",
+            "count" : 15
+          }, {
+            "item" : "5584250-55133202400",
+            "count" : 14
+          }, {
+            "item" : "5584250-55133202500",
+            "count" : 13
+          }, {
+            "item" : "5584250-55133202600",
+            "count" : 12
+          }, {
+            "item" : "5584250-55133202700",
+            "count" : 11
+          }, {
+            "item" : "5584250-55133202800",
+            "count" : 10
+          }, {
+            "item" : "5584250-55133202901",
+            "count" : 9
+          }, {
+            "item" : "5584250-55133202902",
+            "count" : 8
+          }, {
+            "item" : "5584250-55133203000",
+            "count" : 7
+          }, {
+            "item" : "5584250-55133203101",
+            "count" : 6
+          }, {
+            "item" : "5584250-55133203102",
+            "count" : 5
+          }, {
+            "item" : "5584250-55133203103",
+            "count" : 4
+          }, {
+            "item" : "5584250-55133203804",
+            "count" : 3
+          }, {
+            "item" : "5584250-55133201300",
+            "count" : 2
+          }, {
+            "item" : "5584250-55133201600",
+            "count" : 1
+          } ],
+          "smallest" : "0107000"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188979,
+        "name" : "Measure",
+        "dataTypeName" : "text",
+        "description" : "Measure full name\n",
+        "fieldName" : "measure",
+        "position" : 9,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752727,
+        "width" : 109,
+        "cachedContents" : {
+          "largest" : "Visits to doctor for routine checkup within the past Year among adults aged >=18 Years",
+          "non_null" : 810103,
+          "null" : 0,
+          "top" : [ {
+            "item" : "Current lack of health insurance among adults aged 18–64 Years",
+            "count" : 20
+          }, {
+            "item" : "Arthritis among adults aged >=18 Years",
+            "count" : 19
+          }, {
+            "item" : "Binge drinking among adults aged >=18 Years",
+            "count" : 18
+          }, {
+            "item" : "High blood pressure among adults aged >=18 Years",
+            "count" : 17
+          }, {
+            "item" : "Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure",
+            "count" : 16
+          }, {
+            "item" : "Cancer (excluding skin cancer) among adults aged >=18 Years",
+            "count" : 15
+          }, {
+            "item" : "Current asthma among adults aged >=18 Years",
+            "count" : 14
+          }, {
+            "item" : "Coronary heart disease among adults aged >=18 Years",
+            "count" : 13
+          }, {
+            "item" : "Visits to doctor for routine checkup within the past Year among adults aged >=18 Years",
+            "count" : 12
+          }, {
+            "item" : "Cholesterol screening among adults aged >=18 Years",
+            "count" : 11
+          }, {
+            "item" : "Fecal occult blood test, sigmoidoscopy, or colonoscopy among adults aged 50–75 Years",
+            "count" : 10
+          }, {
+            "item" : "Chronic obstructive pulmonary disease among adults aged >=18 Years",
+            "count" : 9
+          }, {
+            "item" : "Older adult men aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening",
+            "count" : 8
+          }, {
+            "item" : "Older adult women aged >=65 Years who are up to date on a core set of clinical preventive services: Flu shot past Year, PPV shot ever, Colorectal cancer screening, and Mammogram past 2 Years",
+            "count" : 7
+          }, {
+            "item" : "Current smoking among adults aged >=18 Years",
+            "count" : 6
+          }, {
+            "item" : "Visits to dentist or dental clinic among adults aged >=18 Years",
+            "count" : 5
+          }, {
+            "item" : "Diagnosed diabetes among adults aged >=18 Years",
+            "count" : 4
+          }, {
+            "item" : "High cholesterol among adults aged >=18 Years who have been screened in the past 5 Years",
+            "count" : 3
+          }, {
+            "item" : "Chronic kidney disease among adults aged >=18 Years",
+            "count" : 2
+          }, {
+            "item" : "No leisure-time physical activity among adults aged >=18 Years",
+            "count" : 1
+          } ],
+          "smallest" : "All teeth lost among adults aged >=65 Years"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188980,
+        "name" : "Data_Value_Unit",
+        "dataTypeName" : "text",
+        "description" : "The data value unit, such as \"%\" for percentage",
+        "fieldName" : "data_value_unit",
+        "position" : 10,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752728,
+        "width" : 97,
+        "cachedContents" : {
+          "largest" : "%",
+          "non_null" : 810103,
+          "null" : 0,
+          "top" : [ {
+            "item" : "%",
+            "count" : 20
+          } ],
+          "smallest" : "%"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188981,
+        "name" : "DataValueTypeID",
+        "dataTypeName" : "text",
+        "description" : "Identifier for the data value type",
+        "fieldName" : "datavaluetypeid",
+        "position" : 11,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752729,
+        "width" : 103,
+        "cachedContents" : {
+          "largest" : "CrdPrv",
+          "non_null" : 810103,
+          "null" : 0,
+          "top" : [ {
+            "item" : "AgeAdjPrv",
+            "count" : 20
+          }, {
+            "item" : "CrdPrv",
+            "count" : 19
+          } ],
+          "smallest" : "AgeAdjPrv"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188982,
+        "name" : "Data_Value_Type",
+        "dataTypeName" : "text",
+        "description" : "The data type, such as age-adjusted prevalence or crude prevalence",
+        "fieldName" : "data_value_type",
+        "position" : 12,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752730,
+        "width" : 103,
+        "cachedContents" : {
+          "largest" : "Crude prevalence",
+          "non_null" : 810103,
+          "null" : 0,
+          "top" : [ {
+            "item" : "Age-adjusted prevalence",
+            "count" : 20
+          }, {
+            "item" : "Crude prevalence",
+            "count" : 19
+          } ],
+          "smallest" : "Age-adjusted prevalence"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188983,
+        "name" : "Data_Value",
+        "dataTypeName" : "number",
+        "description" : "Data Value, such as 14.7",
+        "fieldName" : "data_value",
+        "position" : 13,
+        "renderTypeName" : "number",
+        "tableColumnId" : 39752731,
+        "width" : 63,
+        "cachedContents" : {
+          "largest" : "95.5",
+          "non_null" : 789432,
+          "average" : "30.83529107003516",
+          "null" : 20671,
+          "top" : [ {
+            "item" : "79.7",
+            "count" : 20
+          }, {
+            "item" : "28.7",
+            "count" : 19
+          }, {
+            "item" : "2.6",
+            "count" : 18
+          }, {
+            "item" : "3.0",
+            "count" : 17
+          }, {
+            "item" : "2.5",
+            "count" : 16
+          }, {
+            "item" : "2.2",
+            "count" : 15
+          }, {
+            "item" : "3.3",
+            "count" : 14
+          }, {
+            "item" : "18.4",
+            "count" : 13
+          }, {
+            "item" : "10.0",
+            "count" : 12
+          }, {
+            "item" : "13.6",
+            "count" : 11
+          }, {
+            "item" : "14.2",
+            "count" : 10
+          }, {
+            "item" : "15.2",
+            "count" : 9
+          }, {
+            "item" : "15.0",
+            "count" : 8
+          }, {
+            "item" : "21.2",
+            "count" : 7
+          }, {
+            "item" : "16.4",
+            "count" : 6
+          } ],
+          "smallest" : "0.2",
+          "sum" : "24342365.5"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "precision" : "1",
+          "align" : "right"
+        }
+      }, {
+        "id" : 333188984,
+        "name" : "Low_Confidence_Limit",
+        "dataTypeName" : "number",
+        "description" : "Low confidence limit",
+        "fieldName" : "low_confidence_limit",
+        "position" : 14,
+        "renderTypeName" : "number",
+        "tableColumnId" : 39752734,
+        "width" : 133,
+        "cachedContents" : {
+          "largest" : "94.1",
+          "non_null" : 789432,
+          "average" : "29.09603132378723",
+          "null" : 20671,
+          "top" : [ {
+            "item" : "76.7",
+            "count" : 20
+          }, {
+            "item" : "30.1",
+            "count" : 19
+          }, {
+            "item" : "2.5",
+            "count" : 18
+          }, {
+            "item" : "2.3",
+            "count" : 17
+          }, {
+            "item" : "1.9",
+            "count" : 16
+          }, {
+            "item" : "2.6",
+            "count" : 15
+          }, {
+            "item" : "2.0",
+            "count" : 14
+          }, {
+            "item" : "8.1",
+            "count" : 13
+          }, {
+            "item" : "14.7",
+            "count" : 12
+          }, {
+            "item" : "6.5",
+            "count" : 11
+          }, {
+            "item" : "8.8",
+            "count" : 10
+          }, {
+            "item" : "10.0",
+            "count" : 9
+          }, {
+            "item" : "8.3",
+            "count" : 8
+          }, {
+            "item" : "11.1",
+            "count" : 7
+          }, {
+            "item" : "15.0",
+            "count" : 6
+          }, {
+            "item" : "10.1",
+            "count" : 5
+          } ],
+          "smallest" : "0.1",
+          "sum" : "22969338.2"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "precision" : "1",
+          "align" : "right"
+        }
+      }, {
+        "id" : 333188985,
+        "name" : "High_Confidence_Limit",
+        "dataTypeName" : "number",
+        "description" : "High confidence limit",
+        "fieldName" : "high_confidence_limit",
+        "position" : 15,
+        "renderTypeName" : "number",
+        "tableColumnId" : 39752735,
+        "width" : 132,
+        "cachedContents" : {
+          "largest" : "96.5",
+          "non_null" : 789432,
+          "average" : "32.57590001418742",
+          "null" : 20671,
+          "top" : [ {
+            "item" : "34.1",
+            "count" : 20
+          }, {
+            "item" : "2.5",
+            "count" : 19
+          }, {
+            "item" : "2.7",
+            "count" : 18
+          }, {
+            "item" : "3.2",
+            "count" : 17
+          }, {
+            "item" : "2.9",
+            "count" : 16
+          }, {
+            "item" : "3.5",
+            "count" : 15
+          }, {
+            "item" : "2.4",
+            "count" : 14
+          }, {
+            "item" : "21.4",
+            "count" : 13
+          }, {
+            "item" : "17.8",
+            "count" : 12
+          }, {
+            "item" : "25.9",
+            "count" : 11
+          }, {
+            "item" : "14.7",
+            "count" : 10
+          }, {
+            "item" : "20.2",
+            "count" : 9
+          }, {
+            "item" : "19.8",
+            "count" : 8
+          }, {
+            "item" : "27.8",
+            "count" : 7
+          }, {
+            "item" : "19.7",
+            "count" : 6
+          }, {
+            "item" : "27.7",
+            "count" : 5
+          }, {
+            "item" : "23.9",
+            "count" : 4
+          } ],
+          "smallest" : "0.3",
+          "sum" : "25716457.9"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "precision" : "1",
+          "align" : "right"
+        }
+      }, {
+        "id" : 333188986,
+        "name" : "Data_Value_Footnote_Symbol",
+        "dataTypeName" : "text",
+        "description" : "Footnote symbol",
+        "fieldName" : "data_value_footnote_symbol",
+        "position" : 16,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752732,
+        "width" : 163,
+        "cachedContents" : {
+          "largest" : "*",
+          "non_null" : 20671,
+          "null" : 789432,
+          "top" : [ {
+            "item" : "*",
+            "count" : 20
+          } ],
+          "smallest" : "*"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188987,
+        "name" : "Data_Value_Footnote",
+        "dataTypeName" : "text",
+        "description" : "Footnote text",
+        "fieldName" : "data_value_footnote",
+        "position" : 17,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752733,
+        "width" : 116,
+        "cachedContents" : {
+          "largest" : "Estimates suppressed for population less than 50",
+          "non_null" : 20671,
+          "null" : 789432,
+          "top" : [ {
+            "item" : "Estimates suppressed for population less than 50",
+            "count" : 20
+          } ],
+          "smallest" : "Estimates suppressed for population less than 50"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188988,
+        "name" : "PopulationCount",
+        "dataTypeName" : "number",
+        "description" : "Population count from census 2010",
+        "fieldName" : "populationcount",
+        "position" : 18,
+        "renderTypeName" : "number",
+        "tableColumnId" : 39752736,
+        "width" : 93,
+        "cachedContents" : {
+          "largest" : "308745538",
+          "non_null" : 809935,
+          "average" : "32030.29848815028",
+          "null" : 168,
+          "top" : [ {
+            "item" : "78860",
+            "count" : 20
+          }, {
+            "item" : "70718",
+            "count" : 19
+          }, {
+            "item" : "6810",
+            "count" : 18
+          }, {
+            "item" : "4938",
+            "count" : 17
+          }, {
+            "item" : "3533",
+            "count" : 16
+          }, {
+            "item" : "3498",
+            "count" : 15
+          }, {
+            "item" : "1552",
+            "count" : 14
+          }, {
+            "item" : "4162",
+            "count" : 13
+          }, {
+            "item" : "4275",
+            "count" : 12
+          }, {
+            "item" : "747",
+            "count" : 11
+          }, {
+            "item" : "2403",
+            "count" : 10
+          }, {
+            "item" : "5864",
+            "count" : 9
+          }, {
+            "item" : "6522",
+            "count" : 8
+          }, {
+            "item" : "4528",
+            "count" : 7
+          }, {
+            "item" : "894",
+            "count" : 6
+          }, {
+            "item" : "1517",
+            "count" : 5
+          }, {
+            "item" : "1",
+            "count" : 4
+          }, {
+            "item" : "2118",
+            "count" : 3
+          }, {
+            "item" : "3122",
+            "count" : 2
+          }, {
+            "item" : "1120",
+            "count" : 1
+          } ],
+          "smallest" : "1",
+          "sum" : "25942459806"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 333188989,
+        "name" : "GeoLocation",
+        "dataTypeName" : "location",
+        "description" : "Latitude, longitude of city or census tract centroid\n",
+        "fieldName" : "geolocation",
+        "position" : 19,
+        "renderTypeName" : "location",
+        "tableColumnId" : 39752737,
+        "width" : 80,
+        "cachedContents" : {
+          "largest" : {
+            "latitude" : "41.1336167952",
+            "longitude" : "-104.719053785"
+          },
+          "non_null" : 810047,
+          "null" : 56,
+          "top" : [ {
+            "item" : {
+              "latitude" : "42.7274599494",
+              "longitude" : "-87.813453024"
+            },
+            "count" : 20
+          }, {
+            "item" : {
+              "latitude" : "43.0093332215",
+              "longitude" : "-88.2457679157"
+            },
+            "count" : 19
+          }, {
+            "item" : {
+              "latitude" : "43.0069174598",
+              "longitude" : "-88.2074124158"
+            },
+            "count" : 18
+          }, {
+            "item" : {
+              "latitude" : "43.0063359223",
+              "longitude" : "-88.2311473429"
+            },
+            "count" : 17
+          }, {
+            "item" : {
+              "latitude" : "43.0120104082",
+              "longitude" : "-88.2317690609"
+            },
+            "count" : 16
+          }, {
+            "item" : {
+              "latitude" : "43.0191942363",
+              "longitude" : "-88.2135597279"
+            },
+            "count" : 15
+          }, {
+            "item" : {
+              "latitude" : "43.031291658",
+              "longitude" : "-88.1935353177"
+            },
+            "count" : 14
+          }, {
+            "item" : {
+              "latitude" : "43.0226136307",
+              "longitude" : "-88.1939415339"
+            },
+            "count" : 13
+          }, {
+            "item" : {
+              "latitude" : "43.033650991",
+              "longitude" : "-88.2366101568"
+            },
+            "count" : 12
+          }, {
+            "item" : {
+              "latitude" : "43.0399877545",
+              "longitude" : "-88.2720582704"
+            },
+            "count" : 11
+          }, {
+            "item" : {
+              "latitude" : "43.0233868556",
+              "longitude" : "-88.2758849774"
+            },
+            "count" : 10
+          }, {
+            "item" : {
+              "latitude" : "43.0227680965",
+              "longitude" : "-88.2469160614"
+            },
+            "count" : 9
+          }, {
+            "item" : {
+              "latitude" : "43.0161918886",
+              "longitude" : "-88.2953996959"
+            },
+            "count" : 8
+          }, {
+            "item" : {
+              "latitude" : "42.9956670639",
+              "longitude" : "-88.1930406365"
+            },
+            "count" : 7
+          }, {
+            "item" : {
+              "latitude" : "42.9675651483",
+              "longitude" : "-88.2785295563"
+            },
+            "count" : 6
+          }, {
+            "item" : {
+              "latitude" : "42.9690572014",
+              "longitude" : "-88.2648600614"
+            },
+            "count" : 5
+          }, {
+            "item" : {
+              "latitude" : "42.9812163181",
+              "longitude" : "-88.206522775"
+            },
+            "count" : 4
+          }, {
+            "item" : {
+              "latitude" : "43.0018404101",
+              "longitude" : "-88.2743159519"
+            },
+            "count" : 3
+          }, {
+            "item" : {
+              "latitude" : "43.0053290026",
+              "longitude" : "-88.2538684665"
+            },
+            "count" : 2
+          }, {
+            "item" : {
+              "latitude" : "42.9839324751",
+              "longitude" : "-88.2479096604"
+            },
+            "count" : 1
+          } ],
+          "smallest" : {
+            "latitude" : "33.5275663773",
+            "longitude" : "-86.7988174678"
+          }
+        },
+        "format" : {
+          "view" : "address_coords",
+          "align" : "left"
+        },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      }, {
+        "id" : 333188990,
+        "name" : "CategoryID",
+        "dataTypeName" : "text",
+        "description" : "Identifier for Topic/Category",
+        "fieldName" : "categoryid",
+        "position" : 20,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752738,
+        "width" : 67,
+        "cachedContents" : {
+          "largest" : "UNHBEH",
+          "non_null" : 810103,
+          "null" : 0,
+          "top" : [ {
+            "item" : "PREVENT",
+            "count" : 20
+          }, {
+            "item" : "HLTHOUT",
+            "count" : 19
+          }, {
+            "item" : "UNHBEH",
+            "count" : 18
+          } ],
+          "smallest" : "HLTHOUT"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188991,
+        "name" : "MeasureId",
+        "dataTypeName" : "text",
+        "description" : "Measure identifier",
+        "fieldName" : "measureid",
+        "position" : 21,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752739,
+        "width" : 63,
+        "cachedContents" : {
+          "largest" : "TEETHLOST",
+          "non_null" : 810103,
+          "null" : 0,
+          "top" : [ {
+            "item" : "ACCESS2",
+            "count" : 20
+          }, {
+            "item" : "ARTHRITIS",
+            "count" : 19
+          }, {
+            "item" : "BINGE",
+            "count" : 18
+          }, {
+            "item" : "BPHIGH",
+            "count" : 17
+          }, {
+            "item" : "BPMED",
+            "count" : 16
+          }, {
+            "item" : "CANCER",
+            "count" : 15
+          }, {
+            "item" : "CASTHMA",
+            "count" : 14
+          }, {
+            "item" : "CHD",
+            "count" : 13
+          }, {
+            "item" : "CHECKUP",
+            "count" : 12
+          }, {
+            "item" : "CHOLSCREEN",
+            "count" : 11
+          }, {
+            "item" : "COLON_SCREEN",
+            "count" : 10
+          }, {
+            "item" : "COPD",
+            "count" : 9
+          }, {
+            "item" : "COREM",
+            "count" : 8
+          }, {
+            "item" : "COREW",
+            "count" : 7
+          }, {
+            "item" : "CSMOKING",
+            "count" : 6
+          }, {
+            "item" : "DENTAL",
+            "count" : 5
+          }, {
+            "item" : "DIABETES",
+            "count" : 4
+          }, {
+            "item" : "HIGHCHOL",
+            "count" : 3
+          }, {
+            "item" : "KIDNEY",
+            "count" : 2
+          }, {
+            "item" : "LPA",
+            "count" : 1
+          } ],
+          "smallest" : "ACCESS2"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188992,
+        "name" : "CityFIPS",
+        "dataTypeName" : "text",
+        "description" : "FIPS code",
+        "fieldName" : "cityfips",
+        "position" : 22,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752740,
+        "width" : 61,
+        "cachedContents" : {
+          "largest" : "5613900",
+          "non_null" : 810047,
+          "null" : 56,
+          "top" : [ {
+            "item" : "0644000",
+            "count" : 20
+          }, {
+            "item" : "1714000",
+            "count" : 19
+          }, {
+            "item" : "3651000",
+            "count" : 18
+          }, {
+            "item" : "3918000",
+            "count" : 17
+          }, {
+            "item" : "4055000",
+            "count" : 16
+          }, {
+            "item" : "4260000",
+            "count" : 15
+          }, {
+            "item" : "4748000",
+            "count" : 14
+          }, {
+            "item" : "4752006",
+            "count" : 13
+          }, {
+            "item" : "4805000",
+            "count" : 12
+          }, {
+            "item" : "4819000",
+            "count" : 11
+          }, {
+            "item" : "4824000",
+            "count" : 10
+          }, {
+            "item" : "4827000",
+            "count" : 9
+          }, {
+            "item" : "4835000",
+            "count" : 8
+          }, {
+            "item" : "4865000",
+            "count" : 7
+          }, {
+            "item" : "4967000",
+            "count" : 6
+          }, {
+            "item" : "5101000",
+            "count" : 5
+          }, {
+            "item" : "5116000",
+            "count" : 4
+          }, {
+            "item" : "5156000",
+            "count" : 3
+          }, {
+            "item" : "5157000",
+            "count" : 2
+          }, {
+            "item" : "5167000",
+            "count" : 1
+          } ],
+          "smallest" : "0107000"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188993,
+        "name" : "TractFIPS",
+        "dataTypeName" : "text",
+        "description" : "FIPS code",
+        "fieldName" : "tractfips",
+        "position" : 23,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752741,
+        "width" : 53,
+        "cachedContents" : {
+          "largest" : "56021002000",
+          "non_null" : 782047,
+          "null" : 28056,
+          "top" : [ {
+            "item" : "55133202101",
+            "count" : 20
+          }, {
+            "item" : "55133202102",
+            "count" : 19
+          }, {
+            "item" : "55133202103",
+            "count" : 18
+          }, {
+            "item" : "55133202201",
+            "count" : 17
+          }, {
+            "item" : "55133202202",
+            "count" : 16
+          }, {
+            "item" : "55133202301",
+            "count" : 15
+          }, {
+            "item" : "55133202302",
+            "count" : 14
+          }, {
+            "item" : "55133202400",
+            "count" : 13
+          }, {
+            "item" : "55133202500",
+            "count" : 12
+          }, {
+            "item" : "55133202600",
+            "count" : 11
+          }, {
+            "item" : "55133202700",
+            "count" : 10
+          }, {
+            "item" : "55133202800",
+            "count" : 9
+          }, {
+            "item" : "55133202901",
+            "count" : 8
+          }, {
+            "item" : "55133202902",
+            "count" : 7
+          }, {
+            "item" : "55133203000",
+            "count" : 6
+          }, {
+            "item" : "55133203101",
+            "count" : 5
+          }, {
+            "item" : "55133203102",
+            "count" : 4
+          }, {
+            "item" : "55133203103",
+            "count" : 3
+          }, {
+            "item" : "55133203804",
+            "count" : 2
+          }, {
+            "item" : "55133201300",
+            "count" : 1
+          } ],
+          "smallest" : "01073000100"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 333188994,
+        "name" : "Short_Question_Text",
+        "dataTypeName" : "text",
+        "description" : "Measure short name\n",
+        "fieldName" : "short_question_text",
+        "position" : 24,
+        "renderTypeName" : "text",
+        "tableColumnId" : 39752742,
+        "width" : 113,
+        "cachedContents" : {
+          "largest" : "Teeth Loss",
+          "non_null" : 810103,
+          "null" : 0,
+          "top" : [ {
+            "item" : "Health Insurance",
+            "count" : 20
+          }, {
+            "item" : "Arthritis",
+            "count" : 19
+          }, {
+            "item" : "Binge Drinking",
+            "count" : 18
+          }, {
+            "item" : "High Blood Pressure",
+            "count" : 17
+          }, {
+            "item" : "Taking BP Medication",
+            "count" : 16
+          }, {
+            "item" : "Cancer (except skin)",
+            "count" : 15
+          }, {
+            "item" : "Current Asthma",
+            "count" : 14
+          }, {
+            "item" : "Coronary Heart Disease",
+            "count" : 13
+          }, {
+            "item" : "Annual Checkup",
+            "count" : 12
+          }, {
+            "item" : "Cholesterol Screening",
+            "count" : 11
+          }, {
+            "item" : "Colorectal Cancer Screening",
+            "count" : 10
+          }, {
+            "item" : "COPD",
+            "count" : 9
+          }, {
+            "item" : "Core preventive services for older men",
+            "count" : 8
+          }, {
+            "item" : "Core preventive services for older women",
+            "count" : 7
+          }, {
+            "item" : "Current Smoking",
+            "count" : 6
+          }, {
+            "item" : "Dental Visit",
+            "count" : 5
+          }, {
+            "item" : "Diabetes",
+            "count" : 4
+          }, {
+            "item" : "High Cholesterol",
+            "count" : 3
+          }, {
+            "item" : "Chronic Kidney Disease",
+            "count" : 2
+          }, {
+            "item" : "Physical Inactivity",
+            "count" : 1
+          } ],
+          "smallest" : "Annual Checkup"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Public Domain"
+      },
+      "metadata" : {
+        "rdfSubject" : "0",
+        "rdfClass" : "",
+        "custom_fields" : {
+          "Common Core" : {
+            "Contact Email" : "500cities@cdc.gov",
+            "References" : "https://academic.oup.com/aje/article/179/8/1025/109078, https://academic.oup.com/aje/article/182/2/127/93984, https://www.cdc.gov/pcd/issues/2017/pdf/17_0281.pdf ",
+            "Contact Name" : "500 Cities Public Inquiries",
+            "Program Code" : "009:020",
+            "Publisher" : "Centers for Disease Control and Prevention",
+            "Bureau Code" : "009:20",
+            "Public Access Level" : "Public Domain"
+          },
+          "Dataset Information" : {
+            "Glossary/Methodology " : "http://www.cdc.gov/500cities/"
+          }
+        },
+        "filterCondition" : {
+          "metadata" : {
+            "advanced" : true,
+            "unifiedVersion" : 2
+          },
+          "type" : "operator",
+          "value" : "AND"
+        },
+        "rowIdentifier" : "0",
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "rowLabel" : "Row",
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "owner" : {
+        "id" : "r74h-6zta",
+        "displayName" : "The 500 Cities",
+        "screenName" : "The 500 Cities",
+        "type" : "interactive",
+        "flags" : [ "siteMember" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "r74h-6zta",
+        "displayName" : "The 500 Cities",
+        "screenName" : "The 500 Cities",
+        "type" : "interactive",
+        "flags" : [ "siteMember" ]
+      },
+      "tags" : [ "500cities", "cities", "census", "tracts", "brfss", "prevalence", "unhealthy", "behaviors", "outcomes", "prevention" ],
+      "flags" : [ "default", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ 1, "75230E11-4340-420C-9184-24C02BDDF67F", 1, 1512392128, "959778", 1512392128, "959778", null, "2015", "US", "United States", null, "US", "BRFSS", "Prevention", "59", "Current lack of health insurance among adults aged 18–64 Years", "%", "AgeAdjPrv", "Age-adjusted prevalence", "15.4", "15.1", "15.7", null, null, "308745538", [ null, "41.76915533533597", "-87.62681267627248", null, null ], "PREVENT", "ACCESS2", null, null, "Health Insurance" ]
+, [ 2, "E0C477DD-4D7A-46A0-A260-470F9ED910F2", 2, 1512392128, "959778", 1512392128, "959778", null, "2015", "US", "United States", null, "NY", "BRFSS", "Prevention", "59", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "14.8", "14.5", "15.0", null, null, "308745538", [ null, "41.76915533533597", "-87.62681267627248", null, null ], "PREVENT", "ACCESS2", null, null, "Health Insurance" ]
+, [ 3, "3C49BA9F-6B5C-425A-A85F-AEBDBB38B673", 3, 1512392128, "959778", 1512392128, "959778", null, "2016", "US", "United States", null, "NY", "BRFSS", "Health Outcomes", "59", "Arthritis among adults aged >=18 Years", "%", "AgeAdjPrv", "Age-adjusted prevalence", "22.5", "22.3", "22.7", null, null, "308745538", [ null, null, null, null, null ], "HLTHOUT", "ARTHRITIS", null, null, "Arthritis" ]
+, [ 4, "FA86308D-905E-46DC-9707-F52EE6C5990F", 4, 1512392128, "959778", 1512392128, "959778", null, "2016", "US", "United States", null, "NY", "BRFSS", "Health Outcomes", "59", "Arthritis among adults aged >=18 Years", "%", "CrdPrv", "Crude prevalence", "24.7", "24.5", "24.9", null, null, "308745538", [ null, null, null, null, null ], "HLTHOUT", "ARTHRITIS", null, null, "Arthritis" ]
+, [ 5, "1A600C29-A9ED-47C5-8D4C-E4999C55BCD8", 5, 1512392128, "959778", 1512392128, "959778", null, "2015", "US", "United States", null, "NY", "BRFSS", "Unhealthy Behaviors", "59", "Binge drinking among adults aged >=18 Years", "%", "AgeAdjPrv", "Age-adjusted prevalence", "17.2", "16.9", "17.4", null, null, "308745538", [ null, null, null, null, null ], "UNHBEH", "BINGE", null, null, "Binge Drinking" ]
+, [ 6, "863C17CA-AF96-4932-8604-AE247C0B3EAE", 6, 1512392128, "959778", 1512392128, "959778", null, "2017", "US", "United States", null, "NY", "BRFSS", "Unhealthy Behaviors", "59", "Binge drinking among adults aged >=18 Years", "%", "CrdPrv", "Crude prevalence", "16.3", "16.1", "16.5", null, null, "308745538", [ null, null, null, null, null ], "UNHBEH", "BINGE", null, null, "Binge Drinking" ]
+, [ 7, "42094464-1D7D-4DA4-B1F3-6B9B870C8E3D", 7, 1512392128, "959778", 1512392128, "959778", null, "2017", "US", "United States", null, "NY", "BRFSS", "Health Outcomes", "59", "High blood pressure among adults aged >=18 Years", "%", "AgeAdjPrv", "Age-adjusted prevalence", "29.4", "29.2", "29.7", null, null, "308745538", [ null, null, null, null, null ], "HLTHOUT", "BPHIGH", null, null, "High Blood Pressure" ]
+, [ 8, "81084B90-1D1E-4F96-8992-20F787F70418", 8, 1512392128, "959778", 1512392128, "959778", null, "2015", "US", "United States", null, "NY", "BRFSS", "Health Outcomes", "59", "High blood pressure among adults aged >=18 Years", "%", "CrdPrv", "Crude prevalence", "31.9", "31.6", "32.2", null, null, "308745538", [ null, null, null, null, null ], "HLTHOUT", "BPHIGH", null, null, "High Blood Pressure" ]
+, [ 9, "479D9130-2D51-4D8E-923E-4984AAA0FC9A", 9, 1512392128, "959778", 1512392128, "959778", null, "2015", "US", "United States", null, "NY", "BRFSS", "Prevention", "59", "Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure", "%", "AgeAdjPrv", "Age-adjusted prevalence", "57.7", "57.1", "58.4", null, null, "308745538", [ null, null, null, null, null ], "PREVENT", "BPMED", null, null, "Taking BP Medication" ]
+, [ 10, "953F60FE-AB2E-4F32-88BF-75F9374FE008", 10, 1512392128, "959778", 1512392128, "959778", null, "2015", "US", "United States", null, "NY", "BRFSS", "Prevention", "59", "Taking medicine for high blood pressure control among adults aged >=18 Years with high blood pressure", "%", "CrdPrv", "Crude prevalence", "77.2", "76.8", "77.7", null, null, "308745538", [ null, null, null, null, null ], "PREVENT", "BPMED", null, null, "Taking BP Medication" ]
+, [ 483914, "6C3833D8-10DD-4DD4-8971-2CC97197404D", 483914, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "City", "BRFSS", "Prevention", "3601000", "Current lack of health insurance among adults aged 18–64 Years", "%", "AgeAdjPrv", "Age-adjusted prevalence", "12.1", "11.8", "12.5", null, null, "97856", [ null, "42.6663969604", "-73.7986826267", null, false ], "PREVENT", "ACCESS2", "3601000", null, "Health Insurance" ]
+, [ 483915, "E6482782-7AC8-4A2B-B4A7-A62BC18911C9", 483915, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "City", "BRFSS", "Prevention", "3601000", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "12.0", "11.6", "12.4", null, null, "97856", [ null, "42.6663969604", "-73.7986826267", null, false ], "PREVENT", "ACCESS2", "3601000", null, "Health Insurance" ]
+, [ 483916, "6FB6F2B2-F281-4E9C-9769-B2FF4FA02FF6", 483916, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001000100", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "17.5", "15.3", "20.1", null, null, "2139", [ null, "42.6689223388", "-73.7363128086", null, false ], "PREVENT", "ACCESS2", "3601000", "36001000100", "Health Insurance" ]
+, [ 483917, "C8A5F6D0-9066-4527-9E02-5CF631F29457", 483917, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001000200", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "17.2", "15.4", "19.5", null, null, "6046", [ null, "42.6644132848", "-73.7515035422", null, false ], "PREVENT", "ACCESS2", "3601000", "36001000200", "Health Insurance" ]
+, [ 483918, "AC30CCDE-9104-4984-A105-D936AC669B5C", 483918, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001000300", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "14.5", "13.1", "16.0", null, null, "5888", [ null, "42.6809032625", "-73.7826821091", null, false ], "PREVENT", "ACCESS2", "3601000", "36001000300", "Health Insurance" ]
+, [ 483919, "F7CDFB08-BC8C-4F9A-BBBB-8DB46767F8F0", 483919, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001000401", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "7.0", "5.5", "8.7", null, null, "2227", [ null, "42.7063142452", "-73.8648853765", null, false ], "PREVENT", "ACCESS2", "3601000", "36001000401", "Health Insurance" ]
+, [ 483920, "7D5CBBCC-9897-4955-BD17-668E5ECFE4D6", 483920, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001000403", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "7.3", "6.1", "8.6", null, null, "4415", [ null, "42.6768717594", "-73.8052767605", null, false ], "PREVENT", "ACCESS2", "3601000", "36001000403", "Health Insurance" ]
+, [ 483921, "9E675830-4AA5-46AA-8BC9-BD81251AF68A", 483921, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001000404", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "8.0", "6.7", "9.6", null, null, "5203", [ null, "42.6899799067", "-73.8294687976", null, false ], "PREVENT", "ACCESS2", "3601000", "36001000404", "Health Insurance" ]
+, [ 483922, "E09C621E-35B9-4420-BC2C-4CABB4D9CF3B", 483922, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001000501", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "14.6", "12.6", "16.9", null, null, "3412", [ null, "42.6703394842", "-73.7824281196", null, false ], "PREVENT", "ACCESS2", "3601000", "36001000501", "Health Insurance" ]
+, [ 483923, "539A72CC-ED00-47BF-AC3C-BFA226091251", 483923, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001000502", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "10.2", "7.9", "13.2", null, null, "3448", [ null, "42.6670082538", "-73.7867334062", null, false ], "PREVENT", "ACCESS2", "3601000", "36001000502", "Health Insurance" ]
+, [ 483924, "E1875016-2466-462A-BA02-AFB652DEA542", 483924, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001000600", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "19.9", "17.5", "22.8", null, null, "3676", [ null, "42.6645892981", "-73.7736470561", null, false ], "PREVENT", "ACCESS2", "3601000", "36001000600", "Health Insurance" ]
+, [ 483925, "26F75521-03D9-49DB-A32C-DC6FE8C44283", 483925, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001000700", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "17.3", "14.9", "20.0", null, null, "3821", [ null, "42.6702193076", "-73.7663208488", null, false ], "PREVENT", "ACCESS2", "3601000", "36001000700", "Health Insurance" ]
+, [ 483926, "BC5DB250-A0A7-481A-85F0-0B20DBBD3CAA", 483926, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001000800", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "23.5", "21.4", "25.8", null, null, "2393", [ null, "42.6603637979", "-73.7652144353", null, false ], "PREVENT", "ACCESS2", "3601000", "36001000800", "Health Insurance" ]
+, [ 483927, "EC0CC314-A55B-49C7-879E-2C7A484802D4", 483927, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001001100", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "17.6", "15.8", "19.5", null, null, "1169", [ null, "42.6524098797", "-73.7509377483", null, false ], "PREVENT", "ACCESS2", "3601000", "36001001100", "Health Insurance" ]
+, [ 483928, "2C235F75-A24D-4C8C-AEFD-D59B244ACED6", 483928, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001001400", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "8.6", "6.9", "10.8", null, null, "3560", [ null, "42.6565738126", "-73.7685602045", null, false ], "PREVENT", "ACCESS2", "3601000", "36001001400", "Health Insurance" ]
+, [ 483929, "A2A7C4E8-E066-436E-8EDB-FE60E0BB2BA3", 483929, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001001500", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "10.4", "8.8", "12.5", null, null, "4606", [ null, "42.6575003474", "-73.7816776191", null, false ], "PREVENT", "ACCESS2", "3601000", "36001001500", "Health Insurance" ]
+, [ 483930, "24E01EDF-35C3-4468-87D2-EE02D362F22B", 483930, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001001600", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "8.9", "7.3", "10.9", null, null, "4273", [ null, "42.6586329518", "-73.7895277176", null, false ], "PREVENT", "ACCESS2", "3601000", "36001001600", "Health Insurance" ]
+, [ 483931, "06D3D819-E807-4698-B104-81466B3863D9", 483931, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001001700", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "7.5", "6.2", "9.2", null, null, "4021", [ null, "42.6609262784", "-73.7988655058", null, false ], "PREVENT", "ACCESS2", "3601000", "36001001700", "Health Insurance" ]
+, [ 483932, "3F053B07-27AC-4758-9980-2C45161B5671", 483932, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001001801", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "6.1", "5.1", "7.3", null, null, "6579", [ null, "42.6502117563", "-73.8180522551", null, false ], "PREVENT", "ACCESS2", "3601000", "36001001801", "Health Insurance" ]
+, [ 483933, "C88118AC-42E2-46C3-A3B5-8092BB3D0BAD", 483933, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001001802", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "8.2", "6.6", "9.9", null, null, "3816", [ null, "42.6690193745", "-73.8204194156", null, false ], "PREVENT", "ACCESS2", "3601000", "36001001802", "Health Insurance" ]
+, [ 483934, "9F909492-CF6D-488B-96EF-943BB924B2DA", 483934, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001001901", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "6.2", "4.9", "7.7", null, null, "2607", [ null, "42.6506379789", "-73.7922659082", null, false ], "PREVENT", "ACCESS2", "3601000", "36001001901", "Health Insurance" ]
+, [ 483935, "0698ACCE-C540-4D35-915C-B16511AEF90B", 483935, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001001902", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "6.1", "5.0", "7.4", null, null, "2581", [ null, "42.6449334157", "-73.7963717477", null, false ], "PREVENT", "ACCESS2", "3601000", "36001001902", "Health Insurance" ]
+, [ 483936, "CF502288-460B-42BF-BA01-029B2F42E82B", 483936, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001002000", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "12.7", "10.8", "14.7", null, null, "5771", [ null, "42.634773512", "-73.7849389011", null, false ], "PREVENT", "ACCESS2", "3601000", "36001002000", "Health Insurance" ]
+, [ 483937, "D2B48E31-F25A-4968-849A-90C9DFB63662", 483937, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001002100", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "13.0", "11.1", "15.4", null, null, "3773", [ null, "42.6503316643", "-73.7775364349", null, false ], "PREVENT", "ACCESS2", "3601000", "36001002100", "Health Insurance" ]
+, [ 483938, "4DB8C8D4-66F8-4F69-B8DF-22C6D61FB30F", 483938, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001002200", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "9.6", "8.2", "11.5", null, null, "2344", [ null, "42.6504203642", "-73.7654807905", null, false ], "PREVENT", "ACCESS2", "3601000", "36001002200", "Health Insurance" ]
+, [ 483939, "717B049F-C5D3-4D13-A6D3-A9E65909EEEC", 483939, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001002300", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "16.0", "13.5", "18.5", null, null, "2051", [ null, "42.6452178212", "-73.763557028", null, false ], "PREVENT", "ACCESS2", "3601000", "36001002300", "Health Insurance" ]
+, [ 483940, "F32D788F-6620-4D20-83C7-1EA991E9B866", 483940, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001002500", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "22.4", "19.9", "25.2", null, null, "2872", [ null, "42.6411555559", "-73.7550156219", null, false ], "PREVENT", "ACCESS2", "3601000", "36001002500", "Health Insurance" ]
+, [ 483941, "68D2C586-9569-4370-A333-A2FF8FEBC3C0", 483941, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Prevention", "3601000-36001002600", "Current lack of health insurance among adults aged 18–64 Years", "%", "CrdPrv", "Crude prevalence", "17.9", "16.1", "19.8", null, null, "5165", [ null, "42.6308503001", "-73.7651871364", null, false ], "PREVENT", "ACCESS2", "3601000", "36001002600", "Health Insurance" ]
+, [ 483942, "F4DDD8AB-7C3C-4A69-8022-0EBDAB7C5BCA", 483942, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "City", "BRFSS", "Health Outcomes", "3601000", "Arthritis among adults aged >=18 Years", "%", "AgeAdjPrv", "Age-adjusted prevalence", "24.2", "24.0", "24.4", null, null, "97856", [ null, "42.6663969604", "-73.7986826267", null, false ], "HLTHOUT", "ARTHRITIS", "3601000", null, "Arthritis" ]
+, [ 483943, "62B531D4-C277-4A7F-AA0C-A51F3FD3C5BE", 483943, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "City", "BRFSS", "Health Outcomes", "3601000", "Arthritis among adults aged >=18 Years", "%", "CrdPrv", "Crude prevalence", "20.7", "20.5", "20.9", null, null, "97856", [ null, "42.6663969604", "-73.7986826267", null, false ], "HLTHOUT", "ARTHRITIS", "3601000", null, "Arthritis" ]
+, [ 483944, "853BAAB1-831D-44FD-B0C8-A7AA9B418BC7", 483944, 1512392249, "959778", 1512392249, "959778", null, "2015", "NY", "New York", "Albany", "Census Tract", "BRFSS", "Health Outcomes", "3601000-36001000100", "Arthritis among adults aged >=18 Years", "%", "CrdPrv", "Crude prevalence", "27.4", "26.3", "28.5", null, null, "2139", [ null, "42.6689223388", "-73.7363128086", null, false ], "HLTHOUT", "ARTHRITIS", "3601000", "36001000100", "Arthritis" ]
+ ]
+}
