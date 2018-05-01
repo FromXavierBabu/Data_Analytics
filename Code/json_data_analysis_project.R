@@ -177,7 +177,7 @@ run_data_analysis_program <- function() {
 
   # File Path and Name
   path = "C:/Users/bxavier/Babu/pers/MBA/online_campus/Data_Engg_for_Business_Analytics/Data"
-  file = "500 cities analysis for better health Small.json"
+  file = "500 cities analysis for better health.json"
   
   # Validate JSON
   # If it is a invalid JSON file, exit from run_data_analysis_program function
@@ -215,20 +215,78 @@ run_data_analysis_program <- function() {
   #library('rgdal', lib.loc = 'C:/libs')
   # library(ggplot2)
   
+##################### Health Behavior Analysis #####################
+  
+############ Unhealthy Behavior -- MA vs US ####################
+  
+  MA_Behavior_Dataset<-NtnDataFinal[NtnDataFinal$StateAbbr=='MA' & NtnDataFinal$CategoryID =='UNHBEH',]
+  MA_Result<-NULL
+  MA_Result[c("MeasureID", "Data_Value")] <- MA_Behavior_Dataset[c("MeasureId", "Data_Value")]  
+  MA_Result[["Data_Value"]] <- as.numeric(MA_Result[["Data_Value"]])
+  MA_Result <- aggregate(Data_Value ~ MeasureID, MA_Result, mean, na.rm = TRUE)
+  MA_Result[["Data_Value"]] <- round(MA_Result[["Data_Value"]], digits=2)
+  
+  g <- ggplot(data=MA_Result, aes(x=MeasureID, y=Data_Value, fill=MeasureID)) + geom_bar(stat="identity", position=position_dodge()) +
+    geom_text(aes(label=Data_Value), vjust=1.6, color="white", position = position_dodge(0.9), size=3.5) + 
+    ggtitle("Ulhealthy Behavior Analysis - MA ") + 
+    scale_fill_brewer(palette="Paired") + theme(axis.text.x = element_text(angle=90, face="bold", colour="black"))
+  g  
+  
+  US_Behavior_Dataset<-NtnDataFinal[NtnDataFinal$StateAbbr=='US' & NtnDataFinal$CategoryID =='UNHBEH',]
+  US_Result<-NULL
+  US_Result[c("MeasureID", "Data_Value")] <- US_Behavior_Dataset[c("MeasureId", "Data_Value")]  
+  US_Result[["Data_Value"]] <- as.numeric(US_Result[["Data_Value"]])
+  US_Result <- aggregate(Data_Value ~ MeasureID, US_Result, mean, na.rm = TRUE)
+
+  g <- ggplot(data=US_Result, aes(x=MeasureID, y=Data_Value, fill=MeasureID)) + geom_bar(stat="identity", position=position_dodge()) +
+        geom_text(aes(label=Data_Value), vjust=1.6, color="white", position = position_dodge(0.9), size=3.5) + 
+        ggtitle("Ulhealthy Behavior Analysis -- US") + 
+          scale_fill_brewer(palette="Paired") + theme(axis.text.x = element_text(angle=90, face="bold", colour="black"))
+  g  
+
+##################### Prevent Measure Analysis -- TN vs US #####################
+  
+  TN_Prevent_Dataset<-NtnDataFinal[NtnDataFinal$StateAbbr=='TN' & NtnDataFinal$CategoryID =='PREVENT',]
+  TN_Result<-NULL
+  TN_Result[c("MeasureID", "Data_Value")] <- TN_Prevent_Dataset[c("MeasureId", "Data_Value")]  
+  TN_Result[["Data_Value"]] <- as.numeric(TN_Result[["Data_Value"]])
+  TN_Result <- aggregate(Data_Value ~ MeasureID, TN_Result, mean, na.rm = TRUE)
+  TN_Result[["Data_Value"]] <- round(TN_Result[["Data_Value"]], digits=2)
+  
+  g <- ggplot(data=TN_Result, aes(x=MeasureID, y=Data_Value, fill=MeasureID)) + geom_bar(stat="identity", position=position_dodge()) +
+    geom_text(aes(label=Data_Value), vjust=1.6, color="white", position = position_dodge(0.9), size=3.5) + 
+    ggtitle("Prevent Measure Analysis - TN ") + 
+    scale_fill_brewer(palette="Paired") + theme(axis.text.x = element_text(angle=90, face="bold", colour="black"))
+  g  
+  
+  US_Prevent_Dataset<-NtnDataFinal[NtnDataFinal$StateAbbr=='US' & NtnDataFinal$CategoryID =='PREVENT',]
+  US_PResult<-NULL
+  US_PResult[c("MeasureID", "Data_Value")] <- US_Prevent_Dataset[c("MeasureId", "Data_Value")]  
+  US_PResult[["Data_Value"]] <- as.numeric(US_PResult[["Data_Value"]])
+  US_PResult <- aggregate(Data_Value ~ MeasureID, US_PResult, mean, na.rm = TRUE)
+
+  g <- ggplot(data=US_PResult, aes(x=MeasureID, y=Data_Value, fill=MeasureID)) + geom_bar(stat="identity", position=position_dodge()) +
+    geom_text(aes(label=Data_Value), vjust=1.6, color="white", position = position_dodge(0.9), size=3.5) + 
+    ggtitle("Prevent Measure Analysis -- US") + 
+    scale_fill_brewer(palette="Paired") + theme(axis.text.x = element_text(angle=90, face="bold", colour="black"))
+  g  
+  
+############### Display Data Collection Points in NY State Map  ##################
+  
   state<-readOGR("C:/Users/bxavier/Babu/pers/MBA/online_campus/Data_Engg_for_Business_Analytics/Data/nys/nys.shp", layer="nys")
+  NtnDataDF1<-NtnDataFinal[!is.na(NtnDataFinal$latitude) & !is.na(NtnDataFinal$longitude) & NtnDataFinal$StateAbbr=='NY',]
   
-  fmDataDF1<-NtnDataFinal[!is.na(NtnDataFinal$latitude) & !is.na(NtnDataFinal$longitude) & NtnDataFinal$StateAbbr=='NY',]
-  #fmDataDF1[["Data_Value"]]<-as.numeric(fmDataDF1[["Data_Value"]])
-  fmDataDF1[["longitude"]]<-as.numeric(fmDataDF1[["longitude"]])
-  fmDataDF1[["latitude"]]<-as.numeric(fmDataDF1[["latitude"]])
+  #NtnDataDF1[["Data_Value"]]<-as.numeric(NtnDataDF1[["Data_Value"]])
+  NtnDataDF1[["longitude"]]<-as.numeric(NtnDataDF1[["longitude"]])
+  NtnDataDF1[["latitude"]]<-as.numeric(NtnDataDF1[["latitude"]])
   
-  #write.csv(fmDataDF1[,c("Year", "DataSource", "latitude", "longitude", "PopulationCount")],
+  #write.csv(NtnDataDF1[,c("Year", "DataSource", "latitude", "longitude", "PopulationCount")],
   #          "c:/temp/health_analysis.csv", row.names=FALSE)
   
-  coordinates(fmDataDF1)<-~longitude+latitude
-  proj4string(fmDataDF1)<-CRS("+proj=longlat +datum=NAD83") #set the coordinate system
-  fmDataDF1<-spTransform(fmDataDF1, CRS(proj4string(state)))
-  geodata<-data.frame(coordinates(fmDataDF1))
+  coordinates(NtnDataDF1)<-~longitude+latitude
+  proj4string(NtnDataDF1)<-CRS("+proj=longlat +datum=NAD83") #set the coordinate system
+  NtnDataDF1<-spTransform(NtnDataDF1, CRS(proj4string(state)))
+  geodata<-data.frame(coordinates(NtnDataDF1))
   names(geodata)<-c("x", "y")
   
   ggplot() +  
@@ -242,10 +300,10 @@ run_data_analysis_program <- function() {
     geom_point(aes(x=x, y=y), data=geodata, alpha=1, size=2, color="darkred")+
     coord_equal(ratio=1)
 
-#  return(1)
+  return(1)
   
 ############# Retur more than one object from a function ##############
- return(list(NtnDataFinal, NtnDataGeo))
+# return(list(NtnDataFinal, NtnDataGeo))
   
 }
 
@@ -256,63 +314,6 @@ result <- run_data_analysis_program()
 if (result == 1) {
   print("Successfully Analysed the Data, Thanks for watching")
 }
-
-# Further Data Analysis
-
-if (result == 1) {
-#  merge(aggregate(as.numeric(Data_Value)~as.numeric(Low_Confidence_Limit), NtnDataFinal[NtnDataFinal$StateAbbr=="MA",], function(x) {
-#    c(mean=mean(x, na.rm=TRUE), quantile(x, na.rm=TRUE))
-#  }), list(Data_Value=unique(NtnDataFinal$Data_Value)), all=TRUE)
-
-  names(result[[1]])
-  rtnNtnDataFinal <- result[[1]]
-  
-  SQData<- return_unique_json_field_data(rtnNtnDataFinal, 36)
-  
-  aa<-NULL
-     
-  aa[c("variable", "value")] <- unique(rtnNtnDataFinal[c("Short_Question_Text", "Data_Value")])  
-  
-  aa[["value"]] <- as.numeric(aa[["value"]])
-  
-  aa <- aggregate(value ~ variable, aa, sum)
-
-  library(ggplot2)
-  ggplot(transform(transform(aa, value=value/sum(value)), labPos=cumsum(value)-(value/2)), 
-         aes(x="", y = value, fill = variable)) +
-    geom_bar(width = 1, stat = "identity") +
-    scale_fill_manual(values = c("red", "grey","blue", "green", "cyan")) +
-    coord_polar(theta = "y") +
-    labs(title = "Short Question Survey Analysis") + 
-    geom_text(aes(y=labPos, label=scales::percent(value)), size=5, color="white")
-
-
-      
-  pie(aa$B, labels=aa$A, main="Pie Chart of Countries")
-  
-  library(data.table)
-  DT <- data.table(aa)
-  bb<- DT[, sum(B), by = A]
-  pie(bb$V1, labels=bb$A, main="Pie Chart of Countries")
-  
-
-  
-  head(aa)
-  nrow(aa)
-  unique(df[c("yad", "per")])
-  
-  a<-aggregate(as.numeric(NtnDataFinal$Data_Value), by=list(NtnDataFinal$GeographicLevel), FUN=mean, na.rm = TRUE)
-
-  a<-aggregate(as.numeric(NtnDataFinal$Data_Value), by=list(NtnDataFinal$MeasureId, NtnDataFinal$GeographicLevel), FUN=mean, na.rm = TRUE)
-
-  pie(aa$Data_Value, labels = aa$Short_Question_Text, main="Pie Chart of Countries")
-
-  hist(a$x)
-}
-
-
-
-
 
 
 ##### Installing Libs using Local Zip files ############
