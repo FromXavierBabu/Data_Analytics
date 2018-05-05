@@ -1,5 +1,39 @@
 #*******************************************************************************
+# load_libraries() -- function to load all necessary libraries 
+# Make sure all necessary library lists are added in the function
+# Usage Example:
+# load_libraries()
+#*******************************************************************************
+load_libraries <- function() {
+  # Please include all necessary library names below
+  #  x<-c("httr", "jsonlite", "rjson", "RJSONIO", "gdata", ""rgdal")
+  x<-c("httr", "RJSONIO", "gdata", "rgdal", "ggplot2", "reticulate")
+  #do.call("require", as.list(x))
+  lapply(x, require, character.only = TRUE)
+}
+
+#*******************************************************************************
+# return_city_name() -- function to get city name using latitude and longitude 
+# by calling Google RESTful API
+# Usage Example:
+# city_name<-return_city_name(40.714224,-83.961452)
+# city_name<-return_city_name("40.714224","-83.961452")
+# print(return_city_name("40.714224","-83.961452"))
+#*******************************************************************************
+return_city_name <- function(x, y) {
+  # library(httr)
+  google_url = paste("https://maps.googleapis.com/maps/api/geocode/json?latlng=",toString(x),",",toString(y),"&key=AIzaSyAsEVON3jEWSjdSKzdyKnSIyb0OZpnUGFU",sep="")
+  output <- GET(url=google_url)
+  http_status(output)
+  data <- content(output)
+  addr<-as.list(strsplit(data[["results"]][[1]][["formatted_address"]], ",")[[1]])
+  return(trimws(addr[2]))
+}
+
+#*******************************************************************************
 # return_city_name_data_frame -- function to create a dataframe for city list 
+# the dataset, field index of latitude and longitude 
+# should be passed as parameters
 # Usage Example:
 # return_city_name_data_frame(NtnDataGeo, 2, 3)
 #*******************************************************************************
@@ -15,40 +49,6 @@ return_city_name_data_frame <- function(geo_dataset, lat, lon) {
       }
   })
 }
-
-#*******************************************************************************
-# return_city_name() -- function to get city name using latitude and longitude 
-# by calling Google RESTful API
-# Usage Example:
-# city_name<-return_city_name(40.714224,-83.961452)
-# city_name<-return_city_name("40.714224","-83.961452")
-# print(return_city_name("40.714224","-83.961452"))
-#*******************************************************************************
-return_city_name <- function(x, y) {
-# library(httr)
-  google_url = paste("https://maps.googleapis.com/maps/api/geocode/json?latlng=",toString(x),",",toString(y),"&key=AIzaSyAsEVON3jEWSjdSKzdyKnSIyb0OZpnUGFU",sep="")
-  output <- GET(url=google_url)
-  http_status(output)
-  data <- content(output)
-  addr<-as.list(strsplit(data[["results"]][[1]][["formatted_address"]], ",")[[1]])
-  return(trimws(addr[2]))
-}
-
-
-#*******************************************************************************
-# load_libraries() -- function to load all necessary libraries 
-# Make sure all necessary library lists are added in the function
-# Usage Example:
-# load_libraries()
-#*******************************************************************************
-load_libraries <- function() {
-# Please include all necessary library names below
-#  x<-c("httr", "jsonlite", "rjson", "RJSONIO", "gdata", ""rgdal")
-  x<-c("httr", "RJSONIO", "gdata", "rgdal", "ggplot2")
-  #do.call("require", as.list(x))
-  lapply(x, require, character.only = TRUE)
-}
-
 
 #*******************************************************************************
 # return_json_data() -- function to fetch data from JSON file
@@ -111,7 +111,6 @@ return_GeoInfo<-function(field_num, j_dataset){
   )
 }
 
-
 #*******************************************************************************
 # return_DataFrame() -- function to return a data frame for a specific field
 # in a JSON dataset based on the field number
@@ -169,6 +168,34 @@ exit <- function() {
   .Internal(.invokeRestart(list(NULL, NULL), NULL))
 }  
 
+#******************************************************************************************************************************************************************
+# call_python() -- function to call python code and return a list as output
+# For example, if you have a python code which can read json data and 
+# return a list faster than R code, it can be used along with a data file 
+# to get a list for further processing 
+# Usage Example:
+# json_data <- call_python(DATA_PATH="C:/Users/bxavier/Babu/pers/MBA/online_campus/Data_Engg_for_Business_Analytics/Data", 
+#                          DATA_FILE="Food_Inspection_data.json", PROG_PATH="C:/Users/bxavier/Babu/pers/MBA/online_campus/Data_Engg_for_Business_Analytics/Data", 
+#                          PROG_FILE="json_data.py", PYTHON_EXE="C:/Program Files/Python36/python.exe")
+#******************************************************************************************************************************************************************
+
+call_python <- function(DATA_PATH="", DATA_FILE="", PROG_PATH="", PROG_FILE="", PYTHON_EXE="C:/Program Files/Python36/python.exe") {
+# library(reticulate)
+  data_file_with_path = paste(DATA_PATH, DATA_FILE, sep="/")
+  prog_file_with_path = paste(PROG_PATH, PROG_FILE, sep="/")
+  
+  use_python(PYTHON_EXE)
+  
+  source_python(prog_file_with_path)
+  
+  my_data <- read_json_data(data_file_with_path)
+  
+  json_data <- my_data[["data"]][[14]]
+  
+  return(json_data)
+}
+
+
 ####################### Main Program ###################
 run_data_analysis_program <- function() {
 
@@ -179,7 +206,8 @@ run_data_analysis_program <- function() {
   path = "C:/Users/bxavier/Babu/pers/MBA/online_campus/Data_Engg_for_Business_Analytics/Data"
   file = "500 cities analysis for better health.json"
   
-  # Validate JSON
+################### Validate JSON ########################
+  
   # If it is a invalid JSON file, exit from run_data_analysis_program function
   file_name <- paste(path,file,sep="/")
   isValid <- isValidJSON((file(file_name, "r")), FALSE)
@@ -188,7 +216,7 @@ run_data_analysis_program <- function() {
      exit()
   }
 
-  # Parase and Convert JSON into a Data Frame
+  # Parse and Convert JSON into a Data Frame
   json_dataset <- return_json_data(PATH=path, FILE=file, DATA_TYPE = 'data')
   json_metadataset <- return_json_data(PATH=path, FILE=file, DATA_TYPE = 'meta')
 
@@ -197,6 +225,9 @@ run_data_analysis_program <- function() {
   NtnDataPart2<-data.frame(sapply(28:32, return_DataFrame, jdataset=json_dataset), stringsAsFactors=FALSE)
   NtnDataGeo<-return_GeoInfo(27, json_dataset)
   NtnDataGeo<-data.frame(do.call("cbind", NtnDataGeo), stringsAsFactors=FALSE)
+  
+print(return_city_name("40.714224","-83.961452"))
+  
 #  citylist_dataframe <- t(as.data.frame(return_city_name_data_frame(NtnDataGeo, 2, 3)))
 #  NtnDataFinal<-cbind(NtnDataPart1, NtnDataGeo, NtnDataPart2, citylist_dataframe)
   NtnDataFinal<-cbind(NtnDataPart1, NtnDataGeo, NtnDataPart2)
